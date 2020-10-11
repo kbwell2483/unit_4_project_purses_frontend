@@ -1,22 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 export default function Purses (props) {
-  const getPurses = async ()=>{
-    try{
-      const response = await fetch('http://localhost:3000/purses');
-      const data = await response.json();
-      console.log(data)
-    }catch(error){
-      console.error(error)
-    }
-  }
-  useEffect(
-    ()=>{
-      (
-        async function (){
-           await getPurses();
-        }
-      )()
-    }, [])
-  return <h1> Purses </h1>;
+  return(
+    <div>
+      {
+        props.purses.map(purse =>{
+          return(
+            <div key={purse.id}
+                className="purse">
+            <h3>{purse.brand}</h3>
+            <h3>{purse.name}</h3>
+            <p>{purse.description}</p>
+            <small>{purse.price}</small>
+            </div>
+          )
+        })
+      }
+    </div>
+  );
 }
