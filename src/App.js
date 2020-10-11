@@ -61,7 +61,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <nav>
-          <h4>Add a Purse</h4>
+          <h4 className="title">Add a Purse</h4>
           <form onSubmit={handleSubmit}>
             <label htmlFor="brand">Brand</label>
             <input 
