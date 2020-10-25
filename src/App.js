@@ -13,7 +13,7 @@ export default function App() {
     });
     const getPurses = async ()=>{
       try{
-        const response = await fetch('http://localhost:3000/purses');
+        const response = await fetch('https://expensive-purse-app.herokuapp.com');
         const data = await response.json();
         setPurses(data)
       }catch(error){
@@ -36,7 +36,7 @@ export default function App() {
   const handleSubmit  = async (event) =>{
     event.preventDefault()
     try{
-      const response = await fetch('http://localhost:3000/purses',{
+      const response = await fetch('https://expensive-purse-app.herokuapp.com',{
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',
