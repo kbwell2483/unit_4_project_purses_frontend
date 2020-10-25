@@ -8,3 +8,4 @@ Unsolved problems, and notes to yourself/group members so you can come back to y
     -No problems, but I would like to revisit app in the future and add pictures of these purses, as well as add articles that talk about these purses in depth, such as why they're so expensive in the first place and how to take care of them. 
 
 Link to your hosted working app:
+    https://expensive-purse-app.herokuapp.com/ | 
